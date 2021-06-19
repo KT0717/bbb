@@ -9,38 +9,61 @@
   <script type="text/javascript" src="/js/lib/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="/js/lib/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="/js/lib/fontawesome.all.min.js"></script>
-  <link rel="stylesheet" href="/css/bootstrap.custom.min.css">
+ <!-- <link rel="stylesheet" href="/css/bootstrap.custom.min.css">-->
   <link rel="stylesheet" href="/css/styles.css">
 
 </head>
 
 <body>
   <div class="container">
-    <div class="m-5 p-5">
-      <p>ああああああああああああああああああああ</p>
-      <p>ああああああああああああああああああああ</p>
-      <p>ああああああああああああああああああああ</p>
-      <p>ああああああああああああああああああああ</p>
-      <p>ああああああああああああああああああああ</p>
-      <p>もっと見る</p>
-      <p>ああああああああああああああああああああ</p>
-      <p>ああああああああああああああああああああ</p>
-      <p>ああああああああああああああああああああ</p>
-      <p>ああああああああああああああああああああ</p>
-      <p>ああああああああああああああああああああ</p>
-      <p>ああああああああああああああああああああ</p>
-      <p>ああああああああああああああああああああ</p>
-      <p>ああああああああああああああああああああ</p>
-      <p>ああああああああああああああああああああ</p>
-      <p>ああああああああああああああああああああ</p>
-    </div>
+<div class="inner">
+  <div class="info-img__box">
+  <img src="images/images01.jpg" alt="メインビジュアル01">
   </div>
+<div class="info-title__box">
+  <h2>千葉で行ってみたい観光スポット100選</h2>
+</div>
+<div class="info-text__box">
+<div id="text-wrap">
+  <div class="show-text">
+<p>あああああああああああああああああああああああああああああああああああああああ</p>
+<p>あああああああああああああああああああああああああああああああああああああああ</p>
+<p>あああああああああああああああああああああああああああああああああああああああ</p>
+<p>あああああああああああああああああああああああああああああああああああああああ</p>
+</div>
+  
+    <div class="hide-text">
+<p>あああああああああああああああああああああああああああああああああああああああ</p>
+<p>あああああああああああああああああああああああああああああああああああああああ</p>
+<p>あああああああああああああああああああああああああああああああああああああああ</p>
+<p>あああああああああああああああああああああああああああああああああああああああ</p>
+<p>あああああああああああああああああああああああああああああああああああああああ</p>
+<p>あああああああああああああああああああああああああああああああああああああああ</p>
+<p>あああああああああああああああああああああああああああああああああああああああ</p>
+<p>あああああああああああああああああああああああああああああああああああああああ</p>
+</div>
+<button class="readmore">続きを読む</button>
+
+</div></div></div></div>
+
+
+
+
+
   <script type="text/javascript" src="/dist/main.min.js"></script>
   <style>
     p {
       margin-bottom: 1rem;
     }
   </style>
+<script>
+  $(function(){
+  $(".readmore").on("click", function() {
+  $(this).toggleClass("on-click");
+  $(".hide-text").slideToggle(1000);
+  });
+  });
+</script>
 </body>
 
 </html>
